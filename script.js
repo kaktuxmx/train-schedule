@@ -13,10 +13,10 @@
 
 var database = firebase.database();
 
-var trainName = "";
-var destination = "";
-var firstTrainTime = "";
-var frequency = "";
+var trainName ;
+var destination ;
+var firstTrainTime;
+var frequency;
 
 //Capture click form the HTML
 $("#submit").on("click", function() {
@@ -43,7 +43,8 @@ frequency: frequency
 
 });
 
-//database.ref().on("value", function(snapshot){
+database.ref().on("child_added", function(childsnapshot){
+
 
 
 })
