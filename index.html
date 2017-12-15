@@ -52,19 +52,27 @@
               </div>
 
               <!-- Insert tables -->
-              <div class="panel panel-default">
-            <!-- Default panel contents -->
-                <div class="panel-heading">Panel heading</div>
-                <div class="panel-body">
-                  <p>...</p>
-                </div>
-
-                <!-- Table -->
-                <table class="table">
-                ...
-              </table>
-            </div>
-
+              <table class="table">
+              <thead>
+                <tr>
+                  <th>Train Name</th>
+                  <th>Destination</th>
+                  <th>First Train Time</th>
+                  <th>Frequency</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" id="destination"></th>
+                </tr>
+                <tr>
+                  <th  id="firstTrainTime" scope="row"></th>
+                </tr>
+                <tr>
+                  <th id="frequency" scope="row"></th>
+                </tr>
+              </tbody>
+            </table>
     </div>
   <script src="script.js"></script>
   </body>
